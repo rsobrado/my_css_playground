@@ -1,0 +1,88 @@
+@import "compass/css3";
+$maxWidth: 1200px;
+a:hover, a:focus{text-decoration: none;}
+
+header{
+	height: emCalc(120);
+	font-size: emCalc(15px);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	-webkit-transition: all linear 1s;
+	-moz-transition: all linear 1s;
+	-o-transition: all linear 1s;
+	transition: all linear 1s;
+
+	background: white;
+	.navbar-fixed-top {
+		margin-bottom: 0;
+	}
+	.nav-collapse.in.collapse .nav{
+		background: $base-color;
+		margin: 8px 0 !important;
+		li {border: 0; padding: 5px 20px;}
+	}
+
+	.navbar {
+		overflow: hidden;
+		max-width: $maxWidth;
+		margin: 0 auto;
+		padding: 0;
+
+		-webkit-transition: all linear .35s;
+		-moz-transition: all linear .35s;
+		-o-transition: all linear .35s;
+		transition: all linear .35s;
+		.navbar-inner{
+			background: none;
+			border: 0;
+			box-shadow: none;
+			#logo{
+				height: 35px;
+				width: 35px;
+				background: black;
+				color: white;
+				overflow: hidden;
+				display: block;
+				text-align: center;
+				line-height: 1.8;
+				font-size: emCalc(20);
+				float: left;
+				margin-top: 12px;
+				
+			}
+
+			.nav {
+				text-transform: uppercase;
+				margin: 25px 0 0;
+				position: static;
+				display: block;
+				float: right;
+				-webkit-transition: all linear .55s;
+				-moz-transition: all linear .55s;
+				-o-transition: all linear .55s;
+				transition: all linear .55s;
+				li {
+					line-height: 0;
+					padding: 0;
+					a{
+						&:link, &:visited {
+							color: rgba(153, 153, 153, 1);
+							text-transform: capitalize;
+							font-size:12px;
+							padding: 10px 15px 10px;
+						}
+						&:hover {
+							color: rgba(0,0,0,0.7);
+						}
+						
+					}
+					&:first-child {
+						border-left: 0;
+					}
+				}
+			}
+		}
+	}
+}

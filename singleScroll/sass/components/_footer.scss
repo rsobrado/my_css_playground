@@ -1,0 +1,68 @@
+footer{
+	position: absolute;
+	height: emCalc(105px);
+	background: white;
+	font-size: emCalc(15px);
+	text-transform: uppercase;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(black, 0.4);
+	padding: 40px 0 0;	overflow: hidden;
+	bottom: emCalc(105px);
+	width: 100%;
+	a{
+		&:link, &:visited {
+			color: rgba(102,102,102,1);
+			text-shadow: none;
+		}
+		&:hover {
+			color: rgba(102,102,102,0.7);
+		}
+	}
+	ul{
+		margin: 0;
+		list-style-type: none;
+		font-size: 11px;
+		li{
+			display: inline-block;
+			margin-right: 20px;
+			line-height: 25px;
+		}
+	}
+	.navbar {
+		overflow: hidden;
+		max-width: $maxWidth;
+		margin: 0 auto;
+		letter-spacing: 3px;
+		.mobileHidden{
+			margin-left: 10px;
+		}
+	}
+	
+	.cmLogoFooter{
+		margin: 0 auto !important;
+		width: 120px;
+		margin-left: 10px !important;
+		font-size: 100px;
+		font-family: icomoon;
+		line-height: 1;
+		float: left;
+		overflow: initial;
+		max-height: initial;
+	}
+	.cmass{font-size: 14px;}
+	#social_nav {
+		font-family: icomoon !important;
+		text-transform: none;
+		font-size: 20px;
+		float: left;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		a{
+			&:hover{
+				color: white;
+			}
+		}
+	}
+}

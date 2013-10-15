@@ -1,0 +1,11 @@
+&.page2 {
+  background: white;
+  .page_container {
+    overflow: hidden;
+    p{
+    	columns:100px 2;
+    	-webkit-columns:100px 2; /* Safari and Chrome */
+    	-moz-columns:100px 2; /* Firefox */
+    }
+  }
+}

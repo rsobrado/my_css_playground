@@ -1,0 +1,10 @@
+
+&.page1 {
+  background: black;
+  color: white;
+  .page_container {
+    overflow: hidden;
+    margin-top: 20%;
+    text-transform: uppercase;
+  }
+}
